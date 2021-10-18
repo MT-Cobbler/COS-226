@@ -1,0 +1,29 @@
+1.1) Syncrhonized static methods acquire lock on?
+	Class
+	
+1.2) Starvation is problme related to
+	Deadlocks
+	
+1.3)Which one of the following is not a good Lock alrogirthm
+	Liveness
+	
+1.4) Wahat are valid statements about Constructor and synchronization in java?
+	We can use synchronized code in constrcutor
+	
+1.5) Can multiple threads exist on one object
+	Yes
+	
+1.6) A Process is an instance of a Thread
+	False
+	
+1.7) The PetersonLock is restricted to how many processes alternating between the critical section and their remainder section
+	2
+	
+1.8) Which of the followng is the process of storing and restoring of CPU state so that Thread execution can be resumed from the same point at a later point in time.
+	Context Switching
+
+1.9) Which of the following is true about acquiring an object lock before calling wait(), notify(), notifyAll()
+	All of these
+
+1.10) What method name is used to start execution of a thread
+	run()
