@@ -1,0 +1,31 @@
+CarWash:
+	- adds the relevant cars to be washed and dried
+	- main()
+		Creates a carwash object
+		Creates a list of employees // list for scalability 
+		Creates two locks: one to synchronize the CarWasher object (threads wash) and the other to synchronize the CarDryer object (threads dry)
+		Create 4 carWashers: A carWasher object which takes the two queues and its relevant lock as parameters. This assigns 4 washers to the list
+		Create 7 carDryers: A carDryers object which takes the two queues and its relevant lock as parameters. This assigns 7 dryers to the list
+
+Baker:
+	- has flags and labels
+	- changed from arrays to scalable data structures 
+	- addemployee():
+		adds another thread to the bakery class with it default values
+		threadCount keeps track of how many threads are currently in the bakery object
+
+	- lock()
+		looks for the next thread which needs to acquire the lock. This will ensure that the threads with a smaller label will acquire the lock before the current thread requires the lock, as these threads were here before the current thread.
+	- findlargest()
+		look for the smallest thread with a label bigger than current
+	- unlock()
+		releases the lock by applying false to the flags map at index me
+
+CarWasher:
+	- has a washCar and a dryCar Queue objects, used to store the queues from CarWash.
+	- Assigns the bakery lock and adds an employee to the Bakery object
+
+CarDryer:
+	- similar to CarWasher, except dries and not washers	
+	- stops when the dryQueue is empty
+

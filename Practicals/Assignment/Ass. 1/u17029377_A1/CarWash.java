@@ -18,6 +18,7 @@ public class CarWash
 		washCars.add(new Car('m', "A3"));
 		washCars.add(new Car('l', "Ranger"));
 		washCars.add(new Car('s', "GTI"));
+		
 	}
 
 	public static void main(String[] args) {
