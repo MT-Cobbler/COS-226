@@ -40,7 +40,7 @@ class CarDryer extends Thread {
 						System.out.println(Thread.currentThread().getName() + " is taking a break");
 						Thread.sleep(breakTime);
 						lock.unlock();
-					} catch (Exception e) {}
+					} catch (Exception e) {e.printStackTrace();}
 					dryTime = -1;
 				} else {
 					dryCars.remove();
@@ -59,7 +59,7 @@ class CarDryer extends Thread {
 							System.out.println(Thread.currentThread().getName() + " is taking a break.");
 							Thread.sleep(breakTime);
 							lock.unlock();
-						} catch (Exception e) {}
+						} catch (Exception e) {e.printStackTrace();}
 						dryTime = -1;						
 					}
 				}

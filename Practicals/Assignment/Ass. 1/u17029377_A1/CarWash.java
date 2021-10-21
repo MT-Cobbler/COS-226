@@ -22,17 +22,17 @@ public class CarWash
 	}
 
 	public static void main(String[] args) {
-		CarWash carWash = new CarWash();
-		List<Thread> employees = new ArrayList<>();
-		Bakery washLock = new Bakery();
-		Bakery dryLock = new Bakery();
+		CarWash carWash = new CarWash();				// ininitalize and run the Constructor above
+		List<Thread> employees = new ArrayList<>();		// list of threads - list for dynamic purposes
+		Bakery washLock = new Bakery();					// Lock for washing - synchronize the wash queue
+		Bakery dryLock = new Bakery();					// Lock for drying - synchronize the dry queueu
 		for (int i = 0; i < 4; i++) {
-			employees.add(new CarWasher(carWash.washCars, carWash.dryCars, washLock));
+			employees.add(new CarWasher(carWash.washCars, carWash.dryCars, washLock));		// add new washing object for washing thread
 		}
 		for (int i = 0; i < 7; i++) {
-			employees.add(new CarDryer(carWash.washCars, carWash.dryCars, dryLock));
+			employees.add(new CarDryer(carWash.washCars, carWash.dryCars, dryLock));		// add new drying object for drying threads
 		}
-		employees.forEach(Thread::start);
+		employees.forEach(Thread::start);				// start all the threads
 	}
 }
 

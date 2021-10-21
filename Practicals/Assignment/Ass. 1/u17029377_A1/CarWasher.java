@@ -36,7 +36,9 @@ class CarWasher extends Thread {
 						System.out.println(Thread.currentThread().getName() + " is taking a break.");
 						Thread.sleep(breakTime);						// thread is taking break
 						lock.unlock();									// release the lock for another washer/thread
-					} catch (Exception e) {}
+					} catch (Exception e) {
+						e.printStackTrace();
+					}
 					washTime = -1;
 				} else {												// thread will finish washing the car with time remaining on their shift
 					dryCars.add(washCars.remove());						// remove this car and add it to the dryQueue
@@ -55,7 +57,7 @@ class CarWasher extends Thread {
 							Thread.sleep(breakTime);
 							System.out.println(Thread.currentThread().getName() + " is taking a break.");
 							lock.unlock();								// release the lock
-						} catch (Exception e) {}
+						} catch (Exception e) {e.printStackTrace();}
 						washTime = -1;
 					}
 				}

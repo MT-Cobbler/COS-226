@@ -2,7 +2,8 @@
 
 public class Car
 {
-	public volatile long washTime, dryTime;
+	public volatile long washTime;
+	public volatile long dryTime;
 	public String name;
 	public Car(char c, String n){
 

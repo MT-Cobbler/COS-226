@@ -1,6 +1,7 @@
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
+import java.util.Objects;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
@@ -17,7 +18,7 @@ class Bakery implements Lock
         flags = new HashMap<>();
     }
 
-    public void addEmployee() {
+    public void addEmployee() {         // to dynamically add a thread to the lock to increase the amount of threads in this object
         labels.put(threadCount, 0);
         flags.put(threadCount, false);
         threadCount += 1;
@@ -31,7 +32,7 @@ class Bakery implements Lock
         Iterator<Integer> iterator = labels.keySet().iterator();
         while(iterator.hasNext()) {
             int i = iterator.next();
-            while( (i != me) && flags.get(i) && (labels.get(i) < labels.get(me)) || ((labels.get(i) == labels.get(me) &&  i < me)) ){
+            while( (i != me) && flags.get(i) && (labels.get(i) < labels.get(me)) || ((Objects.equals(labels.get(i), labels.get(me)) &&  i < me)) ){
                 System.out.print("");
             }
         }
