@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6ba7c71d-d005-47cf-b971-1b83a50395da" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Bakery.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Car.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarDryer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarWash.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CarWasher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../P3/COS_226_P3/Consensus.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../P3/COS_226_P3/Consensus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../P3/COS_226_P3/ConsensusProtocol.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../P3/COS_226_P3/ConsensusProtocol.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../P3/COS_226_P3/ConsensusThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../P3/COS_226_P3/ConsensusThread.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectId" id="203fcJ6SKM0B8M7m3VcvjNjxtZg" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../P3/COS_226_P3" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6ba7c71d-d005-47cf-b971-1b83a50395da" name="Changes" comment="" />
+      <created>1635278273155</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1635278273155</updated>
+    </task>
+    <servers />
+  </component>
+</project>
