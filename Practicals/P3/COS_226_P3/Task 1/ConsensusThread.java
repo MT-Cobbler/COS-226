@@ -16,17 +16,16 @@ public class ConsensusThread extends Thread
 
 	public void run()
 	{
-//		while(count < 5) {
-			amount = (int) ((Math.random() * (200 - 100)) + 100);
-			breakTime = (int) ((Math.random() * (100 - 50)) + 50);
-			consensus.propose(amount);
-			try {
-				Thread.sleep(breakTime);
-				consensus.decide();
-			} catch (InterruptedException e) {
-				e.printStackTrace();
-			}
-//			count += 1;
-//		}
+		amount = (int) ((Math.random() * (200 - 100)) + 100);
+		breakTime = (int) ((Math.random() * (100 - 50)) + 50);
+		consensus.propose(amount);
+		try {
+			Thread.sleep(breakTime);
+			consensus.decide();
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 	}
+
+
 }
